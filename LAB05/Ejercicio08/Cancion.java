@@ -1,0 +1,22 @@
+package Ejercicio08;
+
+public class Cancion {
+    private String titulo;
+    private String artista;
+    private int duracionSeg;
+
+    public Cancion(String titulo, String artista, int duracionSeg) {
+        this.titulo = titulo;
+        this.artista = artista;
+        this.duracionSeg = duracionSeg;
+    }
+
+    public int getDuracionSeg() {
+        return duracionSeg;
+    }
+
+    @Override
+    public String toString() {
+        return titulo + " - " + artista + " (" + duracionSeg + "s)";
+    }
+}
